@@ -1,0 +1,138 @@
+---
+---
+
+@import "{{ site.theme }}";
+p, ul, ol, table, dl {
+    margin: 0 0 9px;
+}
+
+a.buttons {
+    padding: 0px;
+}
+
+a.github {
+    background: url() no-repeat 0px;
+}
+
+header ul {
+    position: initial;
+}
+
+header {
+  padding-right: unset;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.5), transparent),url(../images/coverphoto.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin: unset;
+  overflow-y: auto;
+  height: 95%;
+  border-radius: 0px 0px 20px 20px;
+}
+
+body {
+  padding: unset;
+  line-height: unset;
+  background-color: #f1f1f1;
+  width: 1260px;
+  margin: auto;
+}
+
+@media print, screen and (max-width: 1259px) {
+  body {
+    width: auto;
+  }
+}
+
+@media print, screen and (max-width: 960px) {
+  section {
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  section {
+    margin-right: 10px;
+  }
+}
+
+img {
+  margin: unset;
+  border: unset;
+  padding: unset;
+}
+
+.logo {
+  margin-top: 5px;
+  border-radius: 50%;
+  border: #e3060e;
+  border-width: thick;
+  border-style: solid;
+}
+
+.pages {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+a {
+    font-weight: 600;
+}
+
+.nav-button {
+  background-color: #f9f9f9;
+  border: #e3060e;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 20px;
+  color: #2b357e;
+  padding: 6px 10px;
+  margin: 5px;
+  width: 146px;
+  height: 41px;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #f9f9f9;
+  color: #2b357e;
+  padding: 12px 20px;
+  border: #e3060e;
+  border-style: solid;
+  border-width: thick;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #f9f9f9;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}

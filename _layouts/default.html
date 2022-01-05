@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        {% if site.logo %}
+	<div class="logo-wrapper">
+          <a href="/"><img class="logo" src="{{site.logo}}" alt="Logo" width="146px" height="150px" /></a>
+        {% endif %}
+	</div>
+	<!--<p class="header">{{ site.description | default: site.github.project_tagline }}</p>-->
+
+        <div class="pages">
+          <a class="nav-button" href="events">News / Events</a></li>
+          <a class="nav-button" href="net">Net Operations</a></li>
+	  <a class="nav-button" href="membership">Membership</a></li>
+	  <a class="nav-button" href="leadership">Leadership</a></li>
+	  <a class="nav-button" href="meetings">Meetings</a></li>
+	  <a class="nav-button" href="training">Training</a></li>
+	  <a class="nav-button" href="gokit">Go Kit</a></li>
+	  <a class="nav-button" href="space-weather">Space Weather</a></li>
+          <a class="nav-button" href="links">Links</a></li>
+	  <a class="nav-button" href="contact">Contact</a></li>
+	</div>
+        
+      </header>
+
+      <section>
+        {{ content }}
+      </section>
+
+      <footer>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+  </body>
+</html>
